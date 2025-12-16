@@ -1,0 +1,102 @@
+body {
+    font-size: 30px;
+    margin: 0;
+}  
+
+.container {
+    width: calc(100% - 20px);
+    background-color: #CCC;
+
+    color: #FF0000;
+    font-size: 30px;
+
+    border: 3px solid #000FFF;
+}
+
+.container strong {
+    border: 3px solid #22F2F2;
+}
+
+h1 { 
+    font-size: 1em;
+}
+
+/*.box { 
+    font-size: 2em;
+}
+
+.box-interno {
+    background-color: #CCC;
+    height: 10em;
+    width: 10em;
+}*/
+
+.box { 
+    background-color: #FF0000;
+    height: 400px;
+    width: 50%;
+}
+
+.box-interno {
+    background-color: #ff0080;
+    width: 50%;
+    height: 50%;
+}
+
+/*
+    Herança, especificidade e cascata
+
+    A ordem de prioridade sempre será: 
+    
+    arquivo style -> style -> css inline 
+    (do menor para maior)
+
+*/
+
+/*
+    Unidades de medida 
+
+    medidas absolutas: não sofrem alterações (px, pt, in, cm, mm)
+    
+    relativas a fonte: usadas em responsividade (em, rem)
+    
+    EM - pega sempre no item "pai" superior a ele, quando mais divs eu tiver, o EM vai 
+    multiplicando e aumentando em cascata
+    
+    REM - mais antiga, por não ser aceita em todos os navegadores. o item é baseado no
+    primeiro elemento da estrutura (definido pelo fontsize do HTML) 
+
+    % - percentual em relação ao espaço
+
+    EX - baseado no tamanho X da fonte (altura) então é pouco confiavel
+
+    CH - usado em locais específicos em relação a largura do espaço de 1 charactere, usado
+        para fontes que tem um tamanho igual na largura de cada letra
+
+    
+    Unidades baseadas em Viewport (espaço visivel) 
+
+    VH - unidade que utiliza o espaço disponivel (100vh - 100% da altura disponivel da tela toda)
+
+    VW - mesma coisa porém em relação a largura
+
+    Vmin - Verificar o menor tamanho entre a altura e a largura e usa-lo
+
+    Vmax - Verificar o maior tamanho entre a altura e a largura e usa-lo
+
+    Inherit - forçar herança (poucos casos)
+    herde a propriedade do item acima 
+
+    
+    CORES
+
+    nomes - nome direto da cor, mas nem todas as cores dem nome
+
+    hexadecimal - especificamente alguma for #0-F 0-F 0-F de acordo com as tonalidades RGB 
+
+    RGB - red gree blue uma mistura dos tons de acordo com os numeros 0-255 para cada cor
+
+    HSL - usar a % para definir cada cor na mistura
+
+    variável currentColor - aproveitar a cor do item acima 
+*/
